@@ -3,8 +3,13 @@ import './Banner.css';
 import { Button, Card, InputLabel, TextField } from '@material-ui/core';
 import { CardContent } from '@mui/material';
 import Icon from './Icon';
+// import Imgslider from "react-simple-image-slider"
 
+
+// const sliderImages = [{url:"https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1nfGVufDB8fDB8fHww&w=1000&q=80"},{url:"https://www.icicilombard.com/docs/default-source/assets/home-revamp/images/insurance-claim-flood-desk.png"}]
 const Banner = () => {
+    
+    
     return (
         <div className='banner'>
             <div className="bg__banner">
@@ -20,7 +25,9 @@ const Banner = () => {
                     marginLeft: "30px",
                     borderRadius: "20px"
                 }}
+
             >
+
                 <Icon style={{ zIndex: "1000" }} />
                 <CardContent>
                     <hr />
@@ -78,6 +85,12 @@ const Banner = () => {
                     </div>
                 </CardContent>
             </Card>
+            {/* <Imgslider
+     width = {500}
+     height = {250}
+     images = {sliderImages}
+     showNavs ={true}
+     /> */}
         </div>
     )
 }
